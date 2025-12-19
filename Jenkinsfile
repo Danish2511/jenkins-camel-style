@@ -19,6 +19,12 @@ pipeline {
                 sh 'echo Testing completed'
             }
         }
+
+        stage('Package') {
+            steps {
+                sh 'echo Packaging artifact'
+            }
+        }
     }
 
     post {
